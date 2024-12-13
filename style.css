@@ -1,0 +1,118 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+}
+/* build your layout */
+.Small {
+  height: 100%;
+  width: 30%;
+}
+.Large {
+  height: 100%;
+  width: 70%;
+}
+.box {
+  height: 25%;
+  width: 100%;
+}
+.cant-see-me {
+  display: none;
+}
+
+/* this will make ALL <img> elements at most 100% of their PARENT! */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* this class goes on the PARENT div of the image! */
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.clickable1 {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+/* changes to the style when the user HOVERS */
+.clickable1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
+/* changes to the style when the user CLICKS */
+.clickable1:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+.translucent {
+  opacity: 0.5;
+}
+
+/* colors to see divs */
+.purple {
+  background-color: #523d64;
+}
+.green {
+  background-color: #85e21f;
+}
+.orange {
+  background-color: #da6339;
+}
+.gold {
+  background-color: #d3a047;
+}
+.yellow {
+  background-color: #ffeca7;
+}
+.black {
+  background-color: #000000;
+}
+.slate {
+  background-color: #1e171f;
+}
+.dark-grey {
+  background-color: #3a3b3c;
+}
+.light-grey {
+  background-color: #d3d3d3;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: block;
+  }
+
+  .Small {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  }
+  .box {
+    height: 90%;
+    width: 100%;
+  }
+  .Large {
+    height: 70%;
+    width: 100%;
+    display: block;
+  }
+  img {
+    display: center-content;
+    height: 90%;
+    max-width: 100%;
+  }
+}
+/* enhance the UX */
+/*
+img:hover {
+  cursor: pointer;
+}
+img:active {
+  transform: scale(0.95);
+}
+*/

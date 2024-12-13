@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>SuperFans project</title>
+  </head>
+  <body>
+    <div class="Large black center-content">
+      <img src="pics/logo.avif" id="logo" >
+      <!-- Initially hidden video -->
+      <iframe
+        width="760"
+        height="599"
+        src="https://www.youtube.com/embed/DZ9sUTqyYGM?si=iZFi0OmjY699uiLw&amp;start=0"
+        id="video"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="cant-see-me"      >
+      </iframe>
+    </div>
+
+    <div class="Small black">
+      <div class="box center-content">
+        <img
+          src="pics/optimus.GIF"
+          class="clickable1"
+          id="start1"
+          onclick="firstLogo()"
+        />
+      </div>
+      <div class="box center-content">
+        <img
+          src="pics/bumblebee.GIF"
+          class="clickable1"
+          id="start2"
+          onclick="secondLogo()"
+        />
+      </div>
+      <div class="box center-content">
+        <img
+          src="pics/megatron.GIF"
+          class="clickable1"
+          id="start3"
+          onclick="thirdLogo()"
+        />
+      </div>
+      <div class="box center-content">
+        <img
+          src="pics/shockwave.GIF"
+          class="clickable1"
+          id="start4"
+          onclick="fourthLogo()"
+        />
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
